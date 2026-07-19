@@ -9,7 +9,7 @@ The app used to control these is named "LED LAMP"
 They generally have one master node that supports BLE which relays the commands from the app to the slaves (using much cheaper 433MHz or 2.4Ghz radios)
 
 # Breakdown
-I logged the the blueooth traffic coming from my phone when using the app (setting the strip to red etc.) and used wireshark to walk through the packets sent (looking specifically for write commands)
+I logged the the bluetooth traffic coming from my phone when using the app (setting the strip to red etc.) and used wireshark to walk through the packets sent (looking specifically for write commands)
 
 ![wireshark_ss](wireshark_ss.png)
 
