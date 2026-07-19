@@ -8,3 +8,8 @@ I wanted something that feels OEM for my leon 1P and couldn't find anything like
 - Cheap ambient led kit (aliexpress etc.)
 - ESP32
 - SN65HVD230 can board
+
+# Chapters
+- [Controller communication reversing](/Generic_controller/writeup.md)
+- [MIB2 Can sniffing](#)
+- [ESP code walkthrough](#)
