@@ -5,6 +5,6 @@ This repository documents the development of an affordable, custom adapter desig
 I wanted something that feels OEM for my leon 1P and couldn't find anything like this
 
 # What's needed?
-Cheap ambient led kit (aliexpress etc.)
-ESP32
-SN65HVD230 can board
+- Cheap ambient led kit (aliexpress etc.)
+- ESP32
+- SN65HVD230 can board
