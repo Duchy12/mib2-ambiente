@@ -9,7 +9,7 @@ The app used to control these is named "LED LAMP"
 They generally have one master node that supports BLE which relays the commands from the app to the slaves (using much cheaper 433MHz or 2.4Ghz radios)
 
 # Breakdown
-I logged the the bluetooth traffic coming from my phone when using the app (setting the strip to red etc.) and used wireshark to walk through the packets sent (looking specifically for write commands)
+I logged the the bluetooth traffic coming from my phone when using the app (setting the strip to red etc.) and used wireshark to walk through the frames sent (looking specifically for write commands)
 
 ![wireshark_ss](wireshark_ss.png)
 
@@ -22,7 +22,7 @@ If we look at the payloads
 | Index | Hex Byte | Purpose           |                                                                                                                                                                |
 |-------|----------|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0     | 0x7E     | Header            |                                                                                                                                                                |
-| 1     | 0xFF     | ZoneID            | In thic case broadcast                                                                                                                                         |
+| 1     | 0xFF     | ZoneID            | In this case broadcast                                                                                                                                         |
 | 2     | 0x05     | Command Group     | 0x05 = Color operation; 0x04 = Power operation                                                                                                                 |
 | 3     | 0x03     | Action Identifier | The specific action within the group.; If Byte 2 is 05 (Color): 0x03 means "Apply RGB Values".; If Byte 2 is 04 (Power): 0x01 means "ON" and 0x00 means "OFF". |
 | 4     | 0xFF     | RED Value         |                                                                                                                                                                |
