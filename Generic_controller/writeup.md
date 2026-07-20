@@ -14,6 +14,7 @@ I logged the the bluetooth traffic coming from my phone when using the app (sett
 ![wireshark_ss](wireshark_ss.png)
 
 If we look at the payloads
+
 ![R](R.png)
 ![G](G.png)
 ![B](B.png)
